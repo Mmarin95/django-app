@@ -1,4 +1,4 @@
 # django-app
 Test Django app
 
-Test 1
+Test 2
