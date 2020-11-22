@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'django.contrib.humanize',
+
     'widget_tweaks',
 
     'boards',
@@ -130,8 +131,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-LOGIN_URL = 'login'
